@@ -1,0 +1,31 @@
+/**
+ * Utilities: Mixins, Functions, etc.
+*/
+
+@use 'sass:math';
+
+// Adds background gradient.
+@mixin gradient($direction: right) {
+  background-image: linear-gradient(to $direction, #da6a99, #b289d8, #60aaf3, #00c1e4, #58cfbd);
+}
+
+// Translates unitless pixel value to rems.
+@function rem($value) {
+  @return math.div($value, 16) + rem;
+}
+
+// Breakpoints.
+$bp-sm: rem(600);
+$bp-md: rem(768);
+$bp-lg: rem(1024);
+
+// Color variables.
+$color-dark-gray: #303030;
+$color-light-gray: #efefef;
+$color-white: #fff;
+$color-pink: #da6a99;
+$color-purple: #b289d8;
+$color-blue: #60aaf3;
+$color-sea-blue: #00c1e4;
+$color-green: #58cfbd;
+
