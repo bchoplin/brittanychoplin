@@ -380,12 +380,6 @@ ul.social {
     max-width: rem(700);
   }
 
-  li:last-of-type {
-    @media (min-width: $bp-sm) {
-      grid-column-start: span 2;
-    }
-  }
-
   .social__link {
     align-items: center;
     display: flex;
