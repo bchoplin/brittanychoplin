@@ -19,12 +19,17 @@ $bp-sm: rem(600);
 $bp-md: rem(768);
 $bp-lg: rem(1024);
 
+$bp-sm-max: rem(599);
+$bp-md-max: rem(767);
+$bp-lg-max: rem(1023);
+
 // Color variables.
 $color-dark-gray: #303030;
 $color-light-gray: #efefef;
-$color-white: #fff;
+$color-white: #ffffff;
 $color-pink: #da6a99;
 $color-purple: #b289d8;
+$color-dark-purple: #823fc0;
 $color-blue: #60aaf3;
 $color-sea-blue: #00c1e4;
 $color-green: #58cfbd;
