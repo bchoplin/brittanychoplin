@@ -25,6 +25,11 @@ h6 {
   font-size: rem(18);
 }
 
+img {
+  height: auto;
+  max-width: 100%;
+}
+
 a {
   color: $color-dark-gray;
 }
@@ -469,6 +474,82 @@ a.timeline__company:focus {
         border-right-color: darken($color-light-gray, 5%);
       }
     }
+  }
+}
+
+.portfolio {
+  display: grid;
+  gap: rem(16);
+  grid-template-columns: minmax(0, 1fr);
+  margin-bottom: rem(30);
+
+  @media (min-width: $bp-sm) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (min-width: $bp-md) {
+    gap: rem(32);
+  }
+
+  p {
+    font-size: rem(14);
+    margin: rem(5) 0 0;
+
+    @media (min-width: $bp-md) {
+      font-size: rem(16);
+    }
+  }
+
+  &__item {
+    background: $color-light-gray;
+    display: flex;
+    flex-direction: column;
+    gap: rem(16);
+    padding: rem(16);
+
+    @media (min-width: $bp-md) {
+      gap: rem(24);
+      padding: rem(32);
+    }
+
+    img {
+      display: block;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: rem(20);
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: rem(18);
+    margin: 0;
+    text-transform: none;
+
+    @media (min-width: $bp-md) {
+      font-size: rem(20);
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &__meta {
+    font-size: rem(14);
+    font-style: italic;
+  }
+
+  &__desc {
+    padding: rem(10) 0 0;
+  }
+
+  &__cta {
+    margin-top: auto;
   }
 }
 
